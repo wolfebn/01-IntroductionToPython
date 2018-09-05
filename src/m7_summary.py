@@ -2,15 +2,15 @@
 An exercise that summarizes what you have learned in this Session.
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Bryan Wolfe.
 """
 ########################################################################
-# TODO: 1.
+# Done: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# Done: 2.
 #   Write code that accomplishes the following:
 #     - Constructs a SimpleTurtle with a  blue  Pen.
 #     - Makes the SimpleTurtle go straight UP 200 pixels.
@@ -37,4 +37,29 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #
 #   As always, COMMIT-and-PUSH when you are done with this module.
 #
+
+import rosegraphics as rg
+window = rg.TurtleWindow()
+window.delay(20)
+turtle1 = rg.SimpleTurtle('turtle')
+turtle1.pen = rg.Pen('blue', 7)
+turtle1.speed = 1
+turtle1.pen_down()
+turtle1.left(90)
+turtle1.forward(200)
+turtle1.pen_up()
+turtle1.backward(240)
+turtle1.right(90)
+turtle1.forward(100)
+turtle1.pen = rg.Pen('green',10)
+turtle1.pen_down()
+turtle1.right(90)
+turtle1.forward(150)
+window.close_on_mouse_click()
+
+
+
+
+
+
 ###############################################################################
